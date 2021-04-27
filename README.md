@@ -1,0 +1,2 @@
+# jasmine-theme
+wp-theme
