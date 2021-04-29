@@ -1,8 +1,8 @@
 <?php
 
 function load_stylesheets() {
-    wp_register_style('basic_styles', get_template_directory_uri() . '/assets/css/basic.css');
-    wp_register_style('jasmine_styles', get_template_directory_uri() . '/assets/css/styles.css');
+    wp_register_style('basic_styles', get_template_directory_uri() . 'basic.css');
+    wp_register_style('jasmine_styles', get_template_directory_uri() . 'style.css');
 
     wp_enqueue_style('basic_styles');
     wp_enqueue_style('jasmine_styles');
