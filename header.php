@@ -10,3 +10,10 @@
 </head>
 
 <body <?php body_class(); ?> >
+
+<?php
+    wp_nav_menu( array(
+        'theme_location' => 'primary',
+        'container_class' => 'df-nav',
+    ));
+?>
