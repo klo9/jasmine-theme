@@ -68,7 +68,8 @@ function jasmine_custom_logo_setup() {
         'header-text'          => array( 'site-title', 'site-description' ),
         'unlink-homepage-logo' => false, 
     );
- 
+    
+    // set_post_thumbnail_size( 500, 200 );
     add_theme_support( 'custom-logo', $defaults );
 }
 

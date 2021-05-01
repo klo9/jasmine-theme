@@ -8,7 +8,11 @@
                 echo '<ul>';
                 while( $post_query->have_posts() ) {
                     $post_query->the_post();
-                    echo '<li>' . get_the_title() . '</li>';
+                    echo '<li>';
+                    echo '<div class="post-thumbnail">' . get_the_post_thumbnail() . '</div>';
+                    echo '<div class="post-title">' . get_the_title() . '</div>';
+                    echo '<div class="post-excerpt">' . get_the_excerpt() . '</div>'; 
+                    echo '</li>';
                 }
                 echo '</ul>';
             } else {
