@@ -9,20 +9,26 @@
 
 </head>
 
-<body <?php body_class(); ?> >
+<body class="jasmine-body" <?php body_class(); ?> >
 
-<div class="container">
-    <nav class="df-nav" id="df-nav">
-
+<main class="jasmine-main">
+    <header class="container side-header">
         <?php
-            wp_nav_menu( array(
-                'theme_location' => 'primary',
-                'container_class' => 'df-nav',
-            ));
+            if ( function_exists('the_custom_logo') ) {
+                the_custom_logo();
+            }
         ?>
+        <nav class="df-nav" id="df-nav">
 
-        <a href="javascript:void(0);" class="icon" onclick="hamburger()">
-            <img class="hamburger" alt="Menu">
-        </a>
-    </nav>
-</div>
+            <?php
+                wp_nav_menu( array(
+                    'theme_location' => 'primary',
+                    'container_class' => 'df-nav',
+                ));
+            ?>
+
+            <a href="javascript:void(0);" class="icon" onclick="hamburger()">
+                <img class="hamburger" alt="Menu">
+            </a>
+        </nav>
+    </header>

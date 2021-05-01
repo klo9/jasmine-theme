@@ -2,3 +2,8 @@
 Theme name: Jasmine
 Author: klo9
 */
+
+.custom-logo {
+    max-width: 250px;
+    max-height: 100px;
+}

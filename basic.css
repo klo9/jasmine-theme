@@ -148,11 +148,11 @@ ul a:hover {
 .df-nav .hamburger {
     width: 20px;
     height: 20px;
-    content: url(/assets/hamburger.svg);
+    content: url(assets/hamburger.svg);
 }
 
 .df-nav.responsive a:focus .hamburger {
-    content: url(/assets/close.svg);
+    content: url(assets/close.svg);
 }
 
 /* footer */
