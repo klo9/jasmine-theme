@@ -3,6 +3,23 @@ Theme name: Jasmine
 Author: klo9
 */
 
+/* root */
+
+:root {
+    --pastel-blue: #adcaff;
+    --pastel-pink: #ffaded;
+    --pastel-green: #b0fff6;
+    --pastel-orange: #ffdac1;
+    --beige: #f4fadc;
+    --off-white: rgb(245, 245, 245);
+}
+
+/* body */
+
+body {
+    background-color: var(--off-white);
+}
+
 /* navigation */
 
 .custom-logo {
@@ -43,9 +60,32 @@ Author: klo9
 /* posts index */
 
 .post-thumbnail > img {
-    max-width: 700px;
+    width: 700px;
     height: 350px;
     object-fit: cover;
+
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.post-title {
+    background-color: var(--pastel-pink);
+    display: inline-block;
+    font-size: large;
+
+    padding: 0.5rem 2rem;
+    margin-top: -50px;
+    z-index: 1;
+}
+
+.post-excerpt {
+    margin-top: -50px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    width: 540px;
+
+    background-color: var(--pastel-blue);
+    padding: 5rem;
 }
 
 /* media queries */
