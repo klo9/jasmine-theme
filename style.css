@@ -7,3 +7,71 @@ Author: klo9
     max-width: 250px;
     max-height: 100px;
 }
+
+.jj-header-page {
+    display: flex;
+    flex-direction: row;
+}
+
+.jj-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.jj-nav li {
+    padding: 1rem;
+}
+
+.jj-nav .icon {
+    display: none;
+    padding: 1rem;
+}
+
+.jj-nav .hamburger{
+    width: 20px;
+    height: 20px;
+    content: url(assets/hamburger.svg);
+}
+
+.jj-nav.responsive a:focus .hamburger {
+    content: url(assets/close.svg);
+}
+
+@media screen and (max-width: 700px) {
+    .jj-header-page {
+        flex-direction: column;
+    }
+
+    .jj-header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .jj-nav ul {display: none;}
+    .jj-nav a.icon {
+        float: right;
+        display: block;
+        position: inherit;
+    }
+
+    .jj-nav.responsive {
+        position: relative;
+    }
+
+    .jj-nav.responsive a.icon {
+        z-index: 1;
+    }
+
+    .jj-nav.responsive ul {
+        position: absolute;
+        right: 0;
+        margin-top: 2rem;
+
+        float: none;
+        display: block;
+        text-align: left;
+
+        background-color: var(--theme-light);
+    }
+}

@@ -9,21 +9,20 @@
 
 </head>
 
-<body class="jasmine-body" <?php body_class(); ?> >
+<body class="col" <?php body_class(); ?> >
 
-<main class="jasmine-main">
-    <header class="container side-header">
+<div class="jj-header-page container">
+    <header class="jj-header">
         <?php
             if ( function_exists('the_custom_logo') ) {
                 the_custom_logo();
             }
         ?>
-        <nav class="df-nav" id="df-nav">
-
+        <nav class="jj-nav" id="jj-nav">
             <?php
                 wp_nav_menu( array(
                     'theme_location' => 'primary',
-                    'container_class' => 'df-nav',
+                    // 'container_class' => 'df-nav',
                 ));
             ?>
 

@@ -1,6 +1,6 @@
     <?php get_header();?>
 
-    <div class="container">
+    <main class="container">
         <?php
             $post_query = new WP_Query( array('posts_per_page' => 3) );
 
@@ -16,7 +16,7 @@
             }
             wp_reset_postdata();
         ?>
-    </div>
-</main>
+    </main>
+</div>
 
 <?php get_footer();?>
