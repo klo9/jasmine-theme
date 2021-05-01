@@ -20,14 +20,22 @@ function load_js() {
     wp_enqueue_script('customjs');
 }
 
-add_action('wp_enqueue_scripts', 'customjs');
+add_action('wp_enqueue_scripts', 'load_js');
 
 
 // navigation
 
-add_theme_support('menu');
-
 function load_nav() {
-    register_nav_menu('primary', __('primary nav menu'));
+    add_theme_support('menus');
+
+    register_nav_menus(array(
+        'side-nav' => __('primary nav menu'),
+        'footer' => __('footer-menu')
+    ));
 }
 add_action('init', 'load_nav');
+
+
+// featured images
+
+add_theme_support('post-thumbnails');

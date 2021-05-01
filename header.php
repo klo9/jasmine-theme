@@ -11,9 +11,18 @@
 
 <body <?php body_class(); ?> >
 
-<?php
-    wp_nav_menu( array(
-        'theme_location' => 'primary',
-        'container_class' => 'df-nav',
-    ));
-?>
+<div class="container">
+    <nav class="df-nav" id="df-nav">
+
+        <?php
+            wp_nav_menu( array(
+                'theme_location' => 'primary',
+                'container_class' => 'df-nav',
+            ));
+        ?>
+
+        <a href="javascript:void(0);" class="icon" onclick="hamburger()">
+            <img class="hamburger" alt="Menu">
+        </a>
+    </nav>
+</div>
