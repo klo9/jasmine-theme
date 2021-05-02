@@ -13,6 +13,9 @@ Author: klo9
     --beige: #f4fadc;
     --off-white: rgb(245, 245, 245);
 
+    /* fonts */
+    --font: 'Poppins', sans-serif;
+
     /* for post index */
     --indent-left: 50px;
     --move-content-up: -50px;
@@ -24,6 +27,7 @@ Author: klo9
 
 body {
     background-color: var(--off-white);
+    font-family: var(--font);
 }
 
 /* navigation */
@@ -88,7 +92,7 @@ body {
     margin-top: var(--move-content-up);
     margin-left: var(--indent-left);
     margin-bottom: var(--indent-left);
-    
+
     /* KEEP THIS WIDTH CONSTANT WITH --feature-img-width */
     width: calc(700px - 10rem);     
 
