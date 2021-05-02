@@ -7,15 +7,22 @@ function hamburger() {
     }
 } 
 
-// window.onscroll = function() {stickyNav()};
-// let navbar = document.getElementById("jj-header");
-// let sticky = navbar.offsetTop;
+window.onscroll = function() {stickyNav()};
+let navbar = document.getElementById("jj-header");
 
-// function stickyNav() {
+function stickyNav() {
 
-//     if (window.pageYOffset >= sticky) {
-//         navbar.classList.add("sticky");
-//     } else {
-//         navbar.classList.remove("sticky");
-//     }
-// } 
+    if (document.body.scrollTop > 1300 || document.documentElement.scrollTop > 1300 && window.innerWidth > 1200) {
+        navbar.style.position = "absolute";
+        navbar.style.top = "1300px";
+    } else if(document.documentElement.scrollTop > 1000 && window.innerWidth < 1200 && window.innerWidth > 700) {
+        navbar.style.position = "absolute";
+        navbar.style.top = "1000px";
+    } else if (document.documentElement.scrollTop > 1300 && window.innerWidth < 700) {
+        navbar.style.position = "absolute";
+        navbar.style.top = "1300px";
+    } else {
+        navbar.style.position = "fixed";
+        navbar.style.top = "0";
+    }
+} 
