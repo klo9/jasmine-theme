@@ -45,6 +45,7 @@ main.container {
 .jj-header-page {
     display: flex;
     flex-direction: row;
+    min-height: 360px;
 }
 
 .jj-header {
@@ -117,6 +118,16 @@ main.container {
     padding: 5rem;
 }
 
+.post-nav.row {
+    justify-content: space-between;
+}
+
+.prev-post,
+.next-post {
+    /* background-color: var(--a22-beige); */
+    padding: 2rem;
+}
+
 /* media queries */
 @media screen and (max-width: 1200px) {
     .jj-header {
@@ -151,6 +162,7 @@ main.container {
         padding: 0;
         width: 100%;
         display: flex;
+        flex-direction: column;
         justify-content: center;
     }
 
@@ -166,6 +178,10 @@ main.container {
         justify-content: space-between;
         align-items: center;
         left: initial;
+    }
+
+    .jj-header-page.container {
+        width: 100%
     }
 
     .jj-nav ul {display: none;}
