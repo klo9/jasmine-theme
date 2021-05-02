@@ -12,6 +12,12 @@ Author: klo9
     --pastel-orange: #ffdac1;
     --beige: #f4fadc;
     --off-white: rgb(245, 245, 245);
+
+    /* for post index */
+    --indent-left: 50px;
+    --move-content-up: -50px;
+    --feature-img-width: 700px;
+    --feature-img-height: 350px;
 }
 
 /* body */
@@ -60,12 +66,12 @@ body {
 /* posts index */
 
 .post-thumbnail > img {
-    width: 700px;
-    height: 350px;
+    width: var(--feature-img-width);
+    height: var(--feature-img-height);
     object-fit: cover;
 
-    margin-left: 50px;
-    margin-top: 50px;
+    margin-left: var(--indent-left);
+    margin-top: var(--indent-left);
 }
 
 .post-title {
@@ -74,15 +80,17 @@ body {
     font-size: large;
 
     padding: 0.5rem 2rem;
-    margin-top: -50px;
+    margin-top: var(--move-content-up);
     z-index: 1;
 }
 
 .post-excerpt {
-    margin-top: -50px;
-    margin-left: 50px;
-    margin-bottom: 50px;
-    width: 540px;
+    margin-top: var(--move-content-up);
+    margin-left: var(--indent-left);
+    margin-bottom: var(--indent-left);
+    
+    /* KEEP THIS WIDTH CONSTANT WITH --feature-img-width */
+    width: calc(700px - 10rem);     
 
     background-color: var(--pastel-blue);
     padding: 5rem;
@@ -140,7 +148,21 @@ body {
     /* posts index */
 
     .post-thumbnail > img {
-        max-width: 100%;
+        /* width: 432px; */
+        width: 80vw;
+        max-width: calc(400px + 2rem);
         height: 150px;
+
+        /* padding: 0 1rem; */
+        margin-left: 20px;
+    }
+
+    .post-excerpt {
+        width: calc(80vw - 2rem);
+        max-width: 400px;
+
+        padding: 5rem 1rem;
+        margin-left: 20px;
+        overflow: hidden;
     }
 }
