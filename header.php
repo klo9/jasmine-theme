@@ -16,7 +16,7 @@
 <body class="col" <?php body_class(); ?> >
 
 <div class="jj-header-page container">
-    <header class="jj-header">
+    <header class="jj-header" id="jj-header">
         <?php
             if ( function_exists('the_custom_logo') ) {
                 the_custom_logo();
