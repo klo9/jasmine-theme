@@ -18,6 +18,13 @@
                     <div class="post-thumbnail"> <?php the_post_thumbnail() ?> </div>
                     <div class="post-title"> <?php the_title() ?></div>
                     <div class="post-excerpt"> <?php the_excerpt() ?></div>
+                    <div class="post-link-container">
+                        <div class="post-link"> 
+                            <a href="<?php the_permalink() ?>">
+                                Read More
+                            </a> 
+                        </div>
+                    </div>
                 </li>
             <?php endwhile ?>
         

@@ -88,21 +88,38 @@ main.container {
     object-fit: cover;
 
     margin-left: var(--indent-left);
-    margin-top: var(--indent-left);
+    /* margin-top: var(--indent-left); */
     
     z-index: -1;
     position: relative;
 }
 
-.post-title {
+main.container li{
+    padding: 1rem 0;       /* keep consistent with --move-content-up */
+}
+
+.post-title,
+.post-link {
     background-color: var(--a22-beige);
     font-size: large;
 
     padding: 0.5rem 2rem;
-    margin-top: var(--move-content-up);
 
     /* z-index: 0; */
     display: inline-block;
+}
+
+.post-title {
+    margin-top: var(--move-content-up);
+}
+
+.post-link {
+    float: right;
+    margin-top: -75px;
+}
+
+.post-link-container {
+    width: 760px;   /* KEEP CONSTANT WITH THUMBNAIL... 700px + offset ... adjust offset as needed */
 }
 
 .post-excerpt {
@@ -160,8 +177,13 @@ main.container {
     }
 
     .post-nav {
-        max-width: 400px;
+        max-width: 400px;       /* KEEP CONSTANT WITH THUMBNAIL... 400px */
         width: 80vw;
+    }
+
+    .post-link-container {
+        width: 80vw;   
+        max-width: 460px; /* KEEP CONSTANT WITH THUMBNAIL... 400px + offset ... adjust offset as needed */
     }
 }
 
