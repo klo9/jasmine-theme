@@ -78,7 +78,9 @@ main.container {
     content: url(assets/close.svg);
 }
 
-
+/* ======================================================================== */
+/* =============================== INDEX.PHP ============================== */
+/* ======================================================================== */
 
 /* posts index */
 
@@ -130,7 +132,7 @@ main.container li{
     width: calc(700px - 10rem);  /* KEEP THIS WIDTH CONSTANT WITH --feature-img-width */
     
 
-    background-color: var(--pastel-blue);
+    background-color: white;
     padding: 5rem;
 }
 
@@ -147,11 +149,60 @@ main.container li{
     padding: 2rem;
 }
 
-/* media queries */
+/* ======================================================================== */
+/* ============================== SINGLE.PHP ============================== */
+/* ======================================================================== */
+
+.single {
+    padding: 3rem;
+}
+
+.single-post-img-container img {
+    max-width: 700px;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+
+    position: relative;
+    z-index: -1;
+
+    margin-left: var(--indent-left);
+}
+
+.single-post-img-container {
+    margin-left: 7rem;
+    margin-right: -5rem;
+}
+
+.single-post-content-container {    
+    max-width: calc(700px + 4rem);
+    width: 90%;
+
+    padding: 2rem;
+    margin-top: -5rem;
+    margin-left: var(--indent-left);
+
+    background-color: white;
+}
+
+
+/* ================================================================================================================================================ */
+/* ============================================================== MEDIA QUERIES =================================================================== */
+/* ================================================================================================================================================ */
+
+
+/* ======================================================================== */
+/* ============================ TABLET QUERIES ============================ */
+/* ======================================================================== */
+
 @media screen and (max-width: 1200px) {
     .jj-header {
         left: 0;
     }
+
+    /* ========= */
+    /* INDEX.PHP */
+    /* ========= */
 
     /* posts index */
 
@@ -185,9 +236,26 @@ main.container li{
         width: 80vw;   
         max-width: 460px; /* KEEP CONSTANT WITH THUMBNAIL... 400px + offset ... adjust offset as needed */
     }
+
+    /* ========== */
+    /* SINGLE.PHP */
+    /* ========== */
+
+    .single-post-img-container img  {
+        height: 200px;
+    }
+
 }
 
+/* ======================================================================== */
+/* ============================ MOBILE QUERIES ============================ */
+/* ======================================================================== */
+
 @media screen and (max-width: 700px) {
+
+    /* ========= */
+    /* INDEX.PHP */
+    /* ========= */
 
     /* containers */
 
@@ -208,10 +276,11 @@ main.container li{
 
     .jj-header {
         flex-direction: row;
-        width: 90%;
+        width: 100%;
         justify-content: space-between;
         align-items: center;
-        left: initial;
+        left: 0;
+
     }
 
     .jj-header-page.container {
@@ -273,5 +342,26 @@ main.container li{
 
     .next-post {
         margin-right: initial;
+    }
+
+    /* ========== */
+    /* SINGLE.PHP */
+    /* ========== */
+
+    .single-post-img-container {
+        margin-top: 6rem;
+    }
+
+    .single-post-img-container img {
+        width: 80vw;
+    }
+
+    .single-post-img-container {
+        margin-left: 3rem;
+        margin-right: 1.3rem;
+    }
+
+    .single-post-content-container {
+        margin-left: initial;
     }
 }
