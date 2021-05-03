@@ -257,6 +257,11 @@ main.container li{
         margin-left: 20px;
     }
 
+    .post-ul li:first-child {
+        /* to offset top nav */
+        margin-top: 3rem;
+    }
+
     .post-excerpt {
         width: calc(80vw - 2rem);
         max-width: 400px;

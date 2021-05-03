@@ -11,7 +11,7 @@
             
         <?php if( $wp_query->have_posts() ) : ?>
 
-        <ul>
+        <ul class="post-ul">
 
             <?php while( $wp_query->have_posts() ) : $wp_query->the_post() ?>
                 <li>
