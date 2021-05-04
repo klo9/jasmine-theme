@@ -22,6 +22,9 @@ Author: klo9
     --move-content-up: -50px;
     --feature-img-width: 700px;
     --feature-img-height: 350px;
+
+    /* for single */
+    --font-bold: 500;
 }
 
 /* body */
@@ -157,7 +160,7 @@ main.container li{
     padding: 3rem;
 }
 
-.single-post-img-container img {
+.single-img-container img {
     max-width: 700px;
     width: 100%;
     height: 400px;
@@ -169,12 +172,12 @@ main.container li{
     margin-left: var(--indent-left);
 }
 
-.single-post-img-container {
+.single-img-container {
     margin-left: 7rem;
     margin-right: -5rem;
 }
 
-.single-post-content-container {    
+.single-content-container {    
     max-width: calc(700px + 4rem);
     width: 90%;
 
@@ -185,6 +188,24 @@ main.container li{
     background-color: white;
 }
 
+.single-title-container h1 {
+    font-weight: var(--font-bold);
+}
+
+.single-title-hr {
+    border: 1px solid lightgray;
+}
+
+.single-date-container {
+    text-align: center;
+    font-style: italic;
+    color: gray;
+}
+
+.post-excerpt p,
+.single-body-container p {
+    line-height: 3rem;
+}
 
 /* ================================================================================================================================================ */
 /* ============================================================== MEDIA QUERIES =================================================================== */
@@ -223,6 +244,10 @@ main.container li{
         overflow: hidden;
     }
 
+    .post-excerpt p {
+        line-height: 2rem;
+    }
+
     .next-post {
         margin-right: var(--move-content-up);
     }
@@ -241,7 +266,7 @@ main.container li{
     /* SINGLE.PHP */
     /* ========== */
 
-    .single-post-img-container img  {
+    .single-img-container img  {
         height: 200px;
     }
 
@@ -348,20 +373,20 @@ main.container li{
     /* SINGLE.PHP */
     /* ========== */
 
-    .single-post-img-container {
+    .single-img-container {
         margin-top: 6rem;
     }
 
-    .single-post-img-container img {
+    .single-img-container img {
         width: 80vw;
     }
 
-    .single-post-img-container {
+    .single-img-container {
         margin-left: 3rem;
         margin-right: 1.3rem;
     }
 
-    .single-post-content-container {
+    .single-content-container {
         margin-left: initial;
     }
 }
