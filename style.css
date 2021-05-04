@@ -192,7 +192,7 @@ main.container li{
     font-weight: var(--font-bold);
 }
 
-.single-title-hr {
+.single-hr {
     border: 1px solid lightgray;
 }
 
