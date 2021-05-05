@@ -170,6 +170,7 @@ main.container li{
     z-index: -1;
 
     margin-left: var(--indent-left);
+    margin-bottom: -5rem;
 }
 
 .single-img-container {
@@ -180,9 +181,8 @@ main.container li{
 .single-content-container {    
     max-width: calc(700px + 4rem);
     width: 90%;
-
     padding: 2rem;
-    margin-top: -5rem;
+    /* margin-top: -5rem; */
     margin-left: var(--indent-left);
 
     background-color: white;
@@ -380,15 +380,12 @@ main.container li{
 
     .single-img-container {
         margin-top: 6rem;
+        margin-left: 3rem;
+        margin-right: 1.3rem;
     }
 
     .single-img-container img {
         width: 80vw;
-    }
-
-    .single-img-container {
-        margin-left: 3rem;
-        margin-right: 1.3rem;
     }
 
     .single-content-container {
