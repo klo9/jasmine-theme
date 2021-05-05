@@ -94,6 +94,7 @@ main.container {
 
     margin-left: var(--indent-left);
     /* margin-top: var(--indent-left); */
+    margin-bottom: var(--move-content-up);
     
     z-index: -1;
     position: relative;
@@ -114,9 +115,9 @@ main.container li{
     display: inline-block;
 }
 
-.post-title {
+/* .post-title {
     margin-top: var(--move-content-up);
-}
+} */
 
 .post-link {
     float: right;
@@ -238,6 +239,7 @@ main.container li{
         height: 150px;
 
         margin-left: 20px;
+        margin-bottom: initial;
     }
 
     .post-excerpt {
