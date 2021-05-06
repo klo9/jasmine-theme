@@ -173,8 +173,9 @@ main.container li{
 /* ============================== SINGLE.PHP ============================== */
 /* ======================================================================== */
 
+.page,
 .single {
-    padding: 3rem;
+    padding: 3rem 0;
 }
 
 .single-img-container img {
@@ -195,6 +196,7 @@ main.container li{
     margin-right: -5rem;
 }
 
+.page-content-container,
 .single-content-container {    
     max-width: calc(700px + 4rem);
     width: 90%;
@@ -220,6 +222,7 @@ main.container li{
 }
 
 .post-excerpt p,
+.page-body-container p,
 .single-body-container p {
     line-height: 3rem;
 }
@@ -232,6 +235,25 @@ main.container li{
 .single-post-nav {
     text-align: center;
     color: gray;
+}
+
+/* ======================================================================== */
+/* =============================== PAGE.PHP =============================== */
+/* ======================================================================== */
+
+.page-title-container {
+    margin-bottom: -4rem;
+}
+
+.page-title-container h1 {
+    background-color: var(--a22-beige);
+    padding: 2rem;
+    text-align: initial;
+    display: inline-block;
+}
+
+.page-content-container {
+    padding-top: 4rem;
 }
 
 /* ================================================================================================================================================ */
@@ -401,8 +423,20 @@ main.container li{
     /* SINGLE.PHP */
     /* ========== */
 
+    .page-title-container,
     .single-img-container {
         margin-top: 6rem;
+    }
+
+    .page-title-container {
+        margin-left: -0.7rem;
+    }
+
+    .page-title-container h1{
+        padding: 1.5rem;
+    }
+
+    .single-img-container{
         margin-left: 3rem;
         margin-right: 1.3rem;
     }
@@ -411,6 +445,7 @@ main.container li{
         width: 80vw;
     }
 
+    .page-content-container,
     .single-content-container {
         margin-left: initial;
     }
