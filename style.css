@@ -38,6 +38,22 @@ main.container {
     margin-right: 0;
 }
 
+/* wp classes */
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.nav-links a:link {
+    text-decoration: none;
+}
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
 /* navigation */
 
 .custom-logo {
@@ -209,6 +225,11 @@ main.container li{
 }
 
 .single-author {
+    text-align: center;
+    color: gray;
+}
+
+.single-post-nav {
     text-align: center;
     color: gray;
 }

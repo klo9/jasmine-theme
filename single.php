@@ -25,6 +25,18 @@
             <p class="single-author">
                 By: <?php echo get_the_author(); ?>
             </p>
+            <hr class="single-hr">
+            <?php
+                echo get_the_post_navigation(
+                    array(
+                        'next_text' => '<div class="single-post-nav">' . 'Next Post: <div>%title</div>' . '</div>',
+                        'prev_text' => '<div class="single-post-nav">' . 'Previous Post: <div>%title</div>' . '</div>',
+                        'screen_reader_text' => ' ',
+                        'class' => 'row',
+                    )
+                );
+            ?>
+        
         </article>
 
     </main>
