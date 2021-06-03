@@ -29,7 +29,7 @@ function load_nav() {
     add_theme_support('menus');
 
     register_nav_menus(array(
-        'side-nav' => __('primary nav menu'),
+        'primary' => __('primary nav menu'),
         'footer' => __('footer-menu')
     ));
 }
