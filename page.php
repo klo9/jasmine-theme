@@ -18,7 +18,7 @@
             <article class="page-content-container">
 
                 <div class="page-body-container">
-                    <?php echo get_the_content(); ?>
+                    <?php the_content(''); ?>
                 </div>
 
             </article>
