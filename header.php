@@ -18,9 +18,11 @@
 <div class="jj-header-page container" id="jj-header-page">
     <header class="jj-header" id="jj-header">
         <?php
-            if ( function_exists('the_custom_logo') ) {
-                the_custom_logo();
-            }
+            // if ( function_exists('the_custom_logo') ) {
+            //     the_custom_logo();
+            // } else {
+                echo '<h1>' . esc_html(get_bloginfo('name')) . '</h1>';
+            // }
         ?>
         <nav class="jj-nav" id="jj-nav">
             <?php
