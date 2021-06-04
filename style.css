@@ -56,6 +56,14 @@ main.container {
 
 /* navigation */
 
+#header-title { /* not responding on dev server for some reason */
+    /* display:inline-block; */
+    width: 250px;
+    font-family: 'PT Serif', serif;
+    text-align: left;
+    font-size: 1.5rem;
+}
+
 .custom-logo {
     max-width: 250px;
     max-height: 100px;
