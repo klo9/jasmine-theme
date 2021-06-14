@@ -14,7 +14,7 @@ function hamburger() {
 window.onscroll = () => { stickyNav(); };
 const navbar = document.getElementById("jj-header");
 const mainContent = document.getElementById("jj-header-page");
-const offset = mainContent.offsetHeight - navbar.offsetHeight - 50;     // -50 to offset navbar padding; adjust as needed
+const offset = mainContent.offsetHeight - navbar.offsetHeight - 350;     // -50 to offset navbar padding; adjust as needed
 const offsetStr = offset.toString().concat("px");
 
 function stickyNav() {
