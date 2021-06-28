@@ -17,6 +17,8 @@
 
 <body class="col" <?php body_class(); ?> >
 
+<?php wp_body_open(); ?>
+
 <div class="jj-header-page container" id="jj-header-page">
     <header class="jj-header" id="jj-header">
         <?php

@@ -32,8 +32,8 @@
         
         <div class="post-nav row">
 
-            <span class="prev-post"><?php echo get_previous_posts_link(__('Previous', 'textdomain')); ?></span>
-            <span class="next-post"><?php echo get_next_posts_link(__('Next', 'textdomain')) ;?></span>
+            <span class="prev-post"><?php echo get_previous_posts_link(__('Previous', 'jasmine-theme')); ?></span>
+            <span class="next-post"><?php echo get_next_posts_link(__('Next', 'jasmine-theme')) ;?></span>
 
         </div>
 

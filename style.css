@@ -1,6 +1,16 @@
 /* 
-Theme name: Jasmine
-Author: klo9
+Theme name: Jasmine Theme
+Author: Ozone Cloud Studio
+Text domain: jasmine-theme
+Author URI: https://ozonecloudstudio.com/
+Description: General-purpose blog theme for WordPress; best suited for blogs and small business websites.
+Version: 1.01
+Requires at least: 4.7
+Requires PHP: 5.2.4
+Tested up to: 5.7.2
+License: GPLv3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.en.html
+Tags: blog
 */
 
 /* root */
@@ -245,9 +255,18 @@ main.container li{
     color: gray;
 }
 
-.single-post-nav {
+.single-post-nav,
+.post-page-numbers {
     text-align: center;
     color: gray;
+}
+
+.post-page-numbers {
+    text-decoration: none;
+}
+
+.post-page-numbers:hover {
+    text-decoration: underline;
 }
 
 /* ======================================================================== */

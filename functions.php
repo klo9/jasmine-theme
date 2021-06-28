@@ -26,11 +26,10 @@ add_action('wp_enqueue_scripts', 'load_js');
 // navigation
 
 function load_nav() {
-    add_theme_support('menus');
 
     register_nav_menus(array(
-        'primary' => __('primary nav menu'),
-        'footer' => __('footer-menu')
+        'primary' => __('primary nav menu', 'jasmine-theme'),
+        'footer' => __('footer-menu', 'jasmine-theme')
     ));
 }
 add_action('init', 'load_nav');
@@ -39,6 +38,10 @@ add_action('init', 'load_nav');
 // featured images
 
 add_theme_support('post-thumbnails');
+
+// required
+
+add_theme_support( "title-tag" );   // causes "page not found" on front page, page 2+
 
 
 // custom header

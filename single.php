@@ -21,11 +21,29 @@
             <div class="single-body-container">
                 <?php echo get_the_content(); ?>
             </div>
+            
+            <?php 
+                // for multi-page posts
+                $wplinkpages = array(
+                    'before'            => '<br/><div class="single-post-nav">' . __( '', 'jasmine-theme' ),
+                    'after'             => '</div><br/>',
+                    'link_before'       => '<span class="page-link">',
+                    'link_after'        => '</span>',
+                    'next_or_number'    => 'next',
+                    'separator'         => ' | ',
+                    'nextpagelink'      => __( 'Next page &raquo', 'jasmine-theme' ),
+                    'previouspagelink'  => __( '&laquo Previous page', 'jasmine-theme' ),
+                );
+
+                wp_link_pages($wplinkpages);
+            ?>
+
             <hr class="single-hr">
             <p class="single-author">
                 By: <?php echo get_the_author(); ?>
             </p>
             <hr class="single-hr">
+
             <?php
                 echo get_the_post_navigation(
                     array(
