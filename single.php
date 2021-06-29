@@ -2,7 +2,7 @@
 
     <?php while ( have_posts() ) : the_post(); ?>
 
-    <main class="container single">
+    <main id="post-<?php the_ID(); ?>" <?php post_class( 'container single' ); ?>>
 
         <div class="single-img-container">
             <?php the_post_thumbnail(); ?>

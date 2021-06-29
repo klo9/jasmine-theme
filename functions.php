@@ -42,6 +42,15 @@ add_theme_support('post-thumbnails');
 // required
 
 add_theme_support( "title-tag" );   // causes "page not found" on front page, page 2+
+add_theme_support( 'automatic-feed-links' );     // for RSS feed
+add_theme_support( "wp-block-styles" );  //
+add_theme_support( "responsive-embeds" );   //
+add_theme_support( "html5" );   //
+add_theme_support( "custom-header" );   //
+add_theme_support( "custom-background" );   //
+add_theme_support( "align-wide" );   //
+add_editor_style(); //
+
 
 
 // custom header
